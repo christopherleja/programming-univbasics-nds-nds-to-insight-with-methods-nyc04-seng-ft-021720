@@ -14,20 +14,6 @@ def gross_for_director(director_data)
  end
  puts column_index
  puts total_gross
- # row_index = 0
-#  value_total = 0
- # column_index = 0
-  #inner_len = director_data[:movies[column_index]].length
- #puts inner_len
-  #      while column_index < inner_len do
-   #     value_total += director_data[row_index][:movies[column_index]][:worldwide_gross]
-          
-    #   column_index += 1
-     #   end
- #   row_index += 1
-#  end
-#  puts value_total
-# value_total
 end
 
 # Write a method that, given an NDS creates a new Hash
@@ -35,6 +21,8 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
+  row_index = 0
+  puts nds.length
 #director_name = []
 #total_gross = 0
 #row_index = 0
