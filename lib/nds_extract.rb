@@ -29,7 +29,7 @@ def directors_totals(nds)
     puts director_name[row_index]
     #puts gross_for_director(director_data)
     gross_for_director(director_data)
-    result["#{director_name[row_index]}"] = gross_for_director(director_data)
+    result[director_name[row_index]] = gross_for_director(director_data)
     row_index += 1
   end
   result
