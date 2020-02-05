@@ -27,7 +27,7 @@ def directors_totals(nds)
   total_gross = {}
   while row_index < nds.length do
     director_name.push("#{nds[row_index][:name]}")
-    puts gross_for_director(directors_database)
+    puts gross_for_director(nds)
     
     row_index += 1
   end
