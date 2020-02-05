@@ -25,7 +25,7 @@ def directors_totals(nds)
   row_index = 0
   puts nds.length
     puts nds[:name].class
-    puts nds[:name]
+    puts nds[:name][row_index]
   while row_index < nds.length do
     row_index += 1
   end
