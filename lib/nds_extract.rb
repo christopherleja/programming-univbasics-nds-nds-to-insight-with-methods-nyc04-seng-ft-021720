@@ -9,7 +9,7 @@ def gross_for_director(director_data)
  column_index = 0
  
  puts director_data.class
- puts director_data.length
+ puts director_data[:movies].length
  puts director_data[:movies]
  # row_index = 0
 #  value_total = 0
