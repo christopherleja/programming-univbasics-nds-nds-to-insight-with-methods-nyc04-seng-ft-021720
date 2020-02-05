@@ -30,6 +30,7 @@ def directors_totals(nds)
     #puts gross_for_director(director_data)
     gross_for_director(director_data)
     result[director_name[row_index]] = gross_for_director(director_data)
+    puts result
     row_index += 1
   end
   result
