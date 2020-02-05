@@ -23,13 +23,13 @@ def directors_totals(nds)
   row_index = 0
   director_name = []
   result = {}
-  puts nds.class
+  #puts nds.class
   director_data = nds[row_index]
   while row_index < nds.length do
     director_name.push("#{nds[row_index][:name]}")
-    puts gross_for_director(director_data)
+    #puts gross_for_director(director_data)
     result[director_name[row_index]] = total_gross
     row_index += 1
   end
-
+  result
 end
