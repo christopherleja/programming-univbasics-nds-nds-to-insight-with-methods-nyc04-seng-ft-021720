@@ -27,6 +27,9 @@ def directors_totals(nds)
   while row_index < nds.length do
     puts nds.class
     puts nds
+    row_index += 1
+  end
+  
 #director_name = []
 #total_gross = 0
 #row_index = 0
