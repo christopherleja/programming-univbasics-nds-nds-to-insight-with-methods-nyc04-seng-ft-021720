@@ -5,7 +5,11 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director_data)
   
-#  total_gross = 0
+ total_gross = 0
+ column_index = 0
+ 
+ puts director_data.class
+ puts director_data.length
  # row_index = 0
 #  value_total = 0
  # column_index = 0
@@ -27,27 +31,27 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
-director_name = []
-total_gross = 0
-row_index = 0
-result = {}
+#director_name = []
+#total_gross = 0
+#row_index = 0
+#result = {}
   
-  while row_index < nds.length do
-    inner_len = nds.length
-    director_name.push(nds[row_index][:name])
-    column_index = 0
+ # while row_index < nds.length do
+  #  inner_len = nds.length
+   # director_name.push(nds[row_index][:name])
+  #  column_index = 0
 
-    while column_index < inner_len do
-        gross_for_director(nds)
+   # while column_index < inner_len do
+    #    gross_for_director(nds)
         
   
-    end
-    column_index += 1
-   result[director_name[row_index]] = value_total
-  end
-  row_index += 1
+  #  end
+   # column_index += 1
+  #result[director_name[row_index]] = value_total
+  #end
+  #row_index += 1
 
-  puts result
-  result
+  #puts result
+  #result
  
 end
