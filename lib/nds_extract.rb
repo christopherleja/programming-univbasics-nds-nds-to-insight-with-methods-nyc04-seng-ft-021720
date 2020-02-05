@@ -23,9 +23,8 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   row_index = 0
-  puts nds.length
   while row_index < nds.length do
-    puts nds[row_index][:name].class
+    director_name = nds[row_index][:name]
     puts nds[row_index][:name]
     row_index += 1
   end
