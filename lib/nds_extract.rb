@@ -1,8 +1,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
-# Find a way to accumulate the :worldwide_grosses and return that Integer
-# using director_data as input
 def gross_for_director(director_data)
   
  total_gross = 0
@@ -15,10 +13,6 @@ def gross_for_director(director_data)
  total_gross
 end
 
-# Write a method that, given an NDS creates a new Hash
-# The return value should be like:
-#
-# { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   row_index = 0
   director_name = []
@@ -26,11 +20,10 @@ def directors_totals(nds)
   while row_index < nds.length do
     director_data = nds[row_index]
     director_name.push(nds[row_index][:name])
-   # puts director_name[row_index]
-    #puts gross_for_director(director_data)
+ 
     gross_for_director(director_data)
     result[director_name[row_index]] = gross_for_director(director_data)
-    puts result
+ 
     row_index += 1
   end
   result
