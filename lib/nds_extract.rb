@@ -24,6 +24,7 @@ end
 def directors_totals(nds)
   row_index = 0
   director_name = []
+  
   while row_index < nds.length do
     director_name.push("#{nds[row_index][:name]}")
     puts director_name[row_index]
