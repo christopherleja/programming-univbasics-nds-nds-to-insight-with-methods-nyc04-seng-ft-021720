@@ -13,7 +13,7 @@ def gross_for_director(director_data)
    column_index += 1
  end
  puts column_index
- puts value_total
+ puts total_gross
  # row_index = 0
 #  value_total = 0
  # column_index = 0
